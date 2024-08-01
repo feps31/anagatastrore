@@ -1,0 +1,99 @@
+body {
+    font-family: arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: rgb(34, 193, 195);
+    background:  linear-gradient(90deg, rgba(34, 193, 195, 1) 0%, rgba(240, 45, 253, 1) 100%);
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background: rgb(34, 193, 195);
+    background:  linear-gradient(90deg, rgb(43, 24, 129) 0%, rgb(109, 168, 235) 100%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+.form {
+    margin-bottom: 20px;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+input[type="text"], 
+input[type="password"], 
+button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"],
+input[type="passwod"] {
+    background-color: #fff;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Animasi fade-out saat login berhasil */
+.fade-out {
+    animation: fadeOut 0.5s ease-out;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+}
+
+
+/* Efek shake pada form */
+.shake {
+    animation: shake 0.5s ease-out;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}

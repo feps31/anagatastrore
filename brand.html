@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Baju</title>
+    <link rel="stylesheet" href="brand.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="assets/logo.png" width="30px" height="30px">
+            <h1>Anagata Hoodie & T-shirt</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="dev/html/tb.html">ToteBag</a></li>
+                    <button id="cart-icon">
+                    <a href="#cart">
+                        <!-- SVG for Shopee-like cart icon -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 4H21V6H7V4Z" fill="#FFFFFF"/>
+                            <path d="M2 2H4L6 14H18L20 6H4" fill="#FFFFFF"/>
+                            <path d="M7 20C7 21.1 7.9 22 9 22C10.1 22 11 21.1 11 20C11 18.9 10.1 18 9 18C7.9 18 7 18.9 7 20Z" fill="#FF5722"/>
+                            <path d="M17 20C17 21.1 17.9 22 19 22C20.1 22 21 21.1 21 20C21 18.9 20.1 18 19 18C17.9 18 17 18.9 17 20Z" fill="#FF5722"/>
+                        </svg>
+                    </a>
+                </button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main-content">
+        <div class="container">
+            <div class="product">
+                <img src="assets/hoodie/grey.JPEG" alt="Produk 1">
+                <h2><a href="product.html?panic-hoodie" class="product-link">Panic Hoodie</a></h2>
+                <p class="price">Rp. 100.000</p>
+                <select class="product-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button id="btn-add-to-cart" data-name="Panic Hoodie" data-price="100000" data-sizes="S, M, L, XL">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="assets/hoodie/black.JPEG" alt="Produk 2">
+                <h2>Bottom Hoodie</h2>
+                <p class="price">Rp. 100.000</p>
+                <select class="product-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button id="btn-add-to-cart" data-name="Bottom Hoodie" data-price="100000" data-sizes="S, M, L, XL">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="assets/hoodie/navy.JPEG" alt="Produk 3">
+                <h2>Creepy Hoodie</h2>
+                <p class="price">Rp. 100.000</p>
+                <select class="product-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button id="btn-add-to-cart" data-name="Creepy Hoodie" data-price="100000" data-sizes="S, M, L, XL">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="assets/hoodie/blue.JPEG" alt="Produk 4">
+                <h2>Space Hoodie</h2>
+                <p class="price">Rp. 100.000</p>
+                <select class="product-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button id="btn-add-to-cart" data-name="Space Hoodie" data-price="100000" data-sizes="S, M, L, XL">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="assets/hoodie/cream.JPEG" alt="Produk 5">
+                <h2>KNY Hoodie</h2>
+                <p class="price">Rp. 150.000</p>
+                <select class="product-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button id="btn-add-to-cart" data-name="KNY Hoodie" data-price="150000" data-sizes="S, M, L, XL">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="assets/T-shirt/shirtblack.JPEG" alt="Produk 6">
+                <h2>T-shirt Santuy Distro</h2>
+                <p class="price">Rp. 70.000</p>
+                <select class="product-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button id="btn-add-to-cart" data-name="T-shirt Santuy Distro" data-price="70000" data-sizes="S, M, L, XL">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="assets/T-shirt/shirtwhite.JPEG" alt="Produk 7">
+                <h2>T-shirt Distro Numb</h2>
+                <p class="price">Rp. 70.000</p>
+                <select class="product-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button id="btn-add-to-cart" data-name="T-shirt Distro Numb" data-price="70000" data-sizes="S, M, L, XL">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="assets/T-shirt/shirtblue.JPEG" alt="Produk 8">
+                <h2>T-shirt Distro Starwars</h2>
+                <p class="price">Rp. 70.000</p>
+                <select class="product-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button id="btn-add-to-cart" data-name="T-shirt Distro Starwars" data-price="70000" data-sizes="S, M, L, XL">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="assets/T-shirt/shirtgrey.JPEG" alt="Produk 9">
+                <h2>T-shirt Distro NTV8</h2>
+                <p class="price">Rp. 70.000</p>
+                <select class="product-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button id="btn-add-to-cart" data-name="T-shirt Distro NTV8" data-price="70000" data-sizes="S, M, L, XL">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="assets/T-shirt/shirtbrown.JPEG" alt="Produk 10">
+                <h2>T-shirt Distro NTV8 Forest</h2>
+                <p class="price">Rp. 70.000</p>
+                <select class="product-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button id="btn-add-to-cart" data-name="T-shirt Distro NTV8 Forest" data-price="70000" data-sizes="S, M, L, XL">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="assets/T-shirt/one.JPEG" alt="Produk 11">
+                <h2>T-shirt Distro Astro</h2>
+                <p class="price">Rp. 70.000</p>
+                <select class="product-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button id="btn-add-to-cart" data-name="T-shirt Distro Astro" data-price="70000" data-sizes="S, M, L, XL">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="assets/T-shirt/two.JPEG" alt="Produk 12">
+                <h2>T-shirt Distro North</h2>
+                <p class="price">Rp. 75.000</p>
+                <select class="product-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button id="btn-add-to-cart" data-name="T-shirt Distro North" data-price="70000" data-sizes="S, M, L, XL">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="assets/T-shirt/three.JPEG" alt="Produk 13">
+                <h2>T-shirt Distro Universe</h2>
+                <p class="price">Rp. 80.000</p>
+                <select class="product-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button id="btn-add-to-cart" data-name="T-shirt Distro Universe" data-price="70000" data-sizes="S, M, L, XL">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="assets/T-shirt/four.JPEG" alt="Produk 14">
+                <h2>T-shirt Distro Shy</h2>
+                <p class="price">Rp. 70.000</p>
+                <select class="product-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button id="btn-add-to-cart" data-name="T-shirt Distro Shy" data-price="70000" data-sizes="S, M, L, XL">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="assets/T-shirt/five.JPEG" alt="Produk 15">
+                <h2>T-shirt Distro Diplo</h2>
+                <p class="price">Rp. 80.000</p>
+                <select class="product-size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button id="btn-add-to-cart" data-name="T-shirt Distro Diplo" data-price="70000" data-sizes="S, M, L, XL">Tambah ke Keranjang</button>
+            </div>
+            <!-- Tambah produk lainnya sesuai kebutuhan -->
+        </div>
+    </section>
+
+    <!-- Keranjang Belanja -->
+<section id="cart">
+    <div class="container">
+        <h2>Keranjang Belanja</h2>
+        <ul id="cart-items"></ul>
+        <div id="cart-summary">
+            <p>Total: <span id="cart-total">Rp. 0</span></p>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+</section>
+
+<!-- Bagian Pembatalan dan Pengembalian -->
+<section id="order-management">
+    <div class="container">
+        <h2>Pengelolaan Pesanan</h2>
+        <form id="cancel-order-form">
+            <div>
+                <label for="cancel-order-id">ID Pesanan:</label>
+                <input type="text" id="cancel-order-id" required>
+            </div>
+            <button type="submit">Batalkan Pesanan</button>
+        </form>
+        <form id="return-order-form">
+            <div>
+                <label for="return-order-id">ID Pesanan:</label>
+                <input type="text" id="return-order-id" required>
+            </div>
+            <div>
+                <label for="return-reason">Alasan Pengembalian:</label>
+                <textarea id="return-reason" rows="4" required></textarea>
+            </div>
+            <button type="submit">Ajukan Pengembalian</button>
+        </form>
+    </div>
+</section>
+
+<!-- Bagian Rating dan Ulasan -->
+<section id="reviews">
+    <div class="container">
+        <h2>Ulasan dan Rating</h2>
+        
+        <!-- Formulir Ulasan -->
+        <form id="review-form">
+            <div>
+                <label for="review-rating">Rating:</label>
+                <select id="review-rating" required>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+            </div>
+            <div>
+                <label for="review-text">Ulasan:</label>
+                <textarea id="review-text" rows="4" required></textarea>
+            </div>
+            <button type="submit">Kirim Ulasan</button>
+        </form>
+        
+        <!-- Daftar Ulasan -->
+        <div id="review-list">
+            <h3>Daftar Ulasan:</h3>
+            <ul id="reviews-items">
+                <!-- Ulasan akan ditambahkan di sini melalui JavaScript -->
+            </ul>
+        </div>
+    </div>
+</section>
+
+ <!-- bagian footer disini -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024   Anagata Hoodie & T-shirt. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="brand.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Pengembalian Barang</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-image: url(assets/bgadmin.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            font-weight: bold;
+        }
+        #return-requests-list {
+            list-style: none;
+            padding: 0;
+        }
+        #return-requests-list li {
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .approve-btn, .reject-btn {
+            margin: 5px;
+            padding: 5px 10px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .approve-btn {
+            background-color: #28a745; /* Green */
+        }
+        .reject-btn {
+            background-color: #dc3545; /* Red */
+        }
+        #logout-btn {
+            background-color: #42c037;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+        #logout-btn:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Daftar Pengajuan Pengembalian Barang</h1>
+        <ul id="return-requests-list">
+            <!-- Isi daftar pengembalian barang akan ditampilkan di sini -->
+        </ul>
+        <a href="index.html">Kembali ke halaman utama</a>
+        <button id="logout-btn">Logout</button>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
